@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Formulaire2</title>
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+body{
+background-color:silver;
+border:inset medium navy;
+}
+h2{
+text-align:center;
+border: ridge medium;
+background-color:cyan;
+color:navy;
+}
+legend{
+color:navy;
+}
+</style>
+</head>
+<body>
+<h2><strong>•Enregistrement des étudiants•</strong></h2>
+<form method="post" action="traitement.php">
+<fieldset>
+<legend><h4>Etat Civil</h4></legend> <!-- Titre du fieldset -->
+<label for="nom">✓Nom</label><br />
+<input type="text" name="nom" id="nom" tabindex="10" /><br />
+<label for="prenom">✓Prénoms</label><br /> 
+<input type="text" name="prenom" id="prenom" tabindex="20" /><br />
+<label for="sexe">✓Sexe</label><br/>
+<input type="text" name="sexe" id="sexe" tabindex="30" /><br />
+<label for="pays">✓Pays</label><br/>
+<input type="text" name="pays" id="pays" tabindex="40" /><br />
+<label for="email">✓Email</label><br />
+<input type="text" name="email" id="email" tabindex="50" /><br />
+<label for="contact">✓Contact</label><br />
+<input type="text" name="contact" id="contact" tabindex="60" /><br />
+</fieldset>
+<fieldset>
+<legend><h4>Diplômes</h4></legend> <!-- Titre du fieldset -->
+<p>
+<input type="checkbox" name="cep" id="cep" /> <label for="cep">CEP</label>
+<input type="checkbox" name="bepc" id="bepc" /> <label for="bepc">BEPC</label>
+<input type="checkbox" name="bac" id="bac" /> <label for="bac">BAC</label>
+<input type="checkbox" name="bts" id="bts" /> <label for="bts">BTS</label>
+</p>
+</fieldset>
+<fieldset>
+<legend><h4>Votre adresse</h4></legend>
+<p>
+<label for="adresse"><h4></h4></label><br/>
+<textarea name="adresse" id="adresse" cols="30" rows="4"></textarea>
+</p>
+</fieldset>
+<fieldset>
+<legend><h4>Pays</h4></legend>
+<p>
+<input type="radio" name="pays" value="benin" id="benin" /> <label for="benin">Bénin</label>
+<input type="radio" name="pays" value="senegal" id="senegal" /> <label for="senegal">Sénégal</label>
+<input type="radio" name="pays" value="france" id="france" /> <label for="france">France</label>
+</p>
+</fieldset>
+<fieldset>
+<legend><h4>Les boutons</h4></legend>
+<p>
+<center style="text-align:center"><input type="submit" /> <input type="reset" name="effacer" value="Effacer" id="effacer" /> <input type="button" value="Quitter" /></center>
+</p>
+</fieldset>
+</form>
+</body>
+</html>
